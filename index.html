@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu" id="menu">
+        <form action="">
+          <input
+            type="button"
+            value="Start"
+            id="start-button"
+            onclick="startGame(),firstBoxVisible()"
+          />
+        </form>
+      </div>
+
+      <div class="game" id="game">
+        <div class="counters">
+          <form action="" id="point-form">
+            <label for="point">Point:</label>
+            <input type="text" id="point-text" value="0" readonly />
+          </form>
+
+          <form action="" id="timer-form">
+            <label for="point">Timer:</label>
+            <input type="text" id="timer-text" value="3" readonly />
+          </form>
+        </div>
+
+        <div class="boxes">
+          <div class="box" id="box1"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box2"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box3"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box4"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box5"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box6"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box7"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box8"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+          <div class="box" id="box9"><button class="button" onclick="boxInvisible(),boxClickRandom()"></button></div>
+        </div>
+      </div>
+
+      <div id="end-game" class="end-game">
+        <div class="point">
+          <span>Game Over</span> <br />
+          <span id="last-point">Your Point:0</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script/script.js"></script>
+</html>
